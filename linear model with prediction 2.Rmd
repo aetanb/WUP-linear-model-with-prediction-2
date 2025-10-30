@@ -100,3 +100,10 @@ cor(SIMS~ARM+GRIP,data=data)
 ```
 
 The correlation number for model3 is higher than both model2 and model1. Meaning that model 3 is better than using just either one ARM or GRIP. 
+
+### Inferential Results
+
+```{r}
+model.3 <- lm(SIMS~ARM+GRIP,data=data)
+summary.lm(model.3)
+```
