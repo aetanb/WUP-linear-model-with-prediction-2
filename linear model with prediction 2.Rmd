@@ -139,3 +139,8 @@ anova(model.2,model.3)
 
 The P-value of this anova test was 0.000000001495 which is even smaller than models 1 and 3. This means that model 3 is also better than model 2, allowing me to conclude that model 3 is the best out of the three. 
 
+### Model1~Model2
+```{r}
+anova(model.1,model.2)
+```
+This anova test did not provide a p-value however it did provide a residual sum of squares. When comparing the values between the two models, the values indicate that the sum of RSS of model 2 is greater than model 1. The difference of the 2 models is -25.189. 
