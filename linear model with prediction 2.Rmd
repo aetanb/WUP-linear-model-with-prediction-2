@@ -33,14 +33,14 @@ cor(SIMS~ARM,data=data)
 ### Inferential Results
 
 ```{r}
-model.1 <- lm(SIMS=ARM,data=data)
+model.1 <- lm(SIMS~ARM,data=data)
 summary.lm(model.1)
 ```
 
 ### Create Target
 
 ```{r}
-target <- data.frame(ARMS=90, GEIP=90)
+target <- data.frame(ARM=90, GRIP=90)
 ```
 
 ### Predict Target Point of Model
@@ -69,6 +69,12 @@ cor(SIMS~GRIP,data=data)
 ### Inferential Results
 
 ```{r}
-model.2 <- lm(SIMS=GRIP,data=data)
+model.2 <- lm(SIMS~GRIP,data=data)
 summary.lm(model.2)
+```
+
+### Predict Target Point of Model2
+
+```{r}
+predict(model.2,target,interval=c("prediction"))
 ```
