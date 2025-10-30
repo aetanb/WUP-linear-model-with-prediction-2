@@ -122,3 +122,12 @@ basicNN + geom_point() + ggtitle("SIMS vs ARM+GRIP") + theme(plot.title = elemen
 ```
 
 
+### Anova Tests for Models
+
+### Model1~Model3
+
+```{r}
+anova(model.1,model.3)
+```
+
+Our P-value was 0.000004994 which is extremely small. This tells us model3 is better than model1. 
