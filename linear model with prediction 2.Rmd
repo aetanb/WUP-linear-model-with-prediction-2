@@ -107,3 +107,9 @@ The correlation number for model3 is higher than both model2 and model1. Meaning
 model.3 <- lm(SIMS~ARM+GRIP,data=data)
 summary.lm(model.3)
 ```
+
+### Predict Target Point of Model3
+
+```{r}
+predict(model.3,target,interval=c("prediction"))
+```
