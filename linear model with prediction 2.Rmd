@@ -146,4 +146,4 @@ anova(model.1,model.2)
 This anova test did not provide a p-value however it did provide a residual sum of squares. When comparing the values between the two models, the values indicate that the sum of RSS of model 2 is greater than model 1. The difference of the 2 models is -25.189. 
 
 ### Discussion and Conclusion
-This exercise deals with comparing models. First we imported the raw data from a given website. In order for these to be compared, the different models must be nested and in comparison i am able to infer which is the better model out of the 3. 
+This exercise deals with comparing models. First we imported the raw data from a given website. In order for these to be compared, the different models must be nested and in comparison through anova test, I was able to infer which is the better model out of the 3. The analysis illustrated model 3 with the highest accuracy out of all three. Meaning SIMS~ARM+GRIP was more accurate than SIMS~ARM and SIMS~GRIP. 
