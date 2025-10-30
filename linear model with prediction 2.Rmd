@@ -108,7 +108,7 @@ model.3 <- lm(SIMS~ARM+GRIP,data=data)
 summary.lm(model.3)
 ```
 
-The formula predicting model3 is SIMS = -5.433871 + 0.037311*ARM + 0.24470*GRIP
+The formula predicting model3 is SIMS = -5.433871 + 0.037311 *ARM + 0.24470 *GRIP
 
 ### Predict Target Point of Model3
 
@@ -120,3 +120,4 @@ predict(model.3,target,interval=c("prediction"))
 ```{r}
 basicNN + geom_point() + ggtitle("SIMS vs ARM+GRIP") + theme(plot.title = element_text(hjust = 0.5, size = 20)) + geom_smooth(method=lm)
 ```
+
