@@ -121,3 +121,4 @@ predict(model.3,target,interval=c("prediction"))
 basicNN + geom_point() + ggtitle("SIMS vs ARM+GRIP") + theme(plot.title = element_text(hjust = 0.5, size = 20)) + geom_smooth(method=lm)
 ```
 
+
